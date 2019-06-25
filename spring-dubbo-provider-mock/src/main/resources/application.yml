@@ -1,0 +1,12 @@
+server:
+  port: 8124
+dubbo:
+  application:
+    name: dubbo-provdier
+  protocol:
+    port: -1
+    name: dubbo
+  registry:
+    address: zookeeper://localhost:2182
+  scan:
+    base-packages: com.spring.dubbo.service.common.BankCardService
